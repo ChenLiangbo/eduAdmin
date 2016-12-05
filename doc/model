@@ -1,0 +1,38 @@
+1,user_profile 
+         extend auth_uer
+ 
+ usertype : 0 superuser
+            1 student
+            2 teacher
+
+
+2,student  学生信息
+id
+name         姓名
+stuNumber    学号
+academy      学院
+prefession   专业
+enterTime    入学年份
+needTime     学制
+state        学年   （第一学年，第二学年）
+tutor        导师   （外键 关联到教师信息）
+
+
+3，teacher   教师信息
+id 
+name              姓名
+teachNumber       工号
+position          职称
+academy           学院（外键）
+prefession        系（外键或者选择）
+
+
+4,course   课程信息
+id 
+name   名称
+cNumber 课程编号
+teacher  上课教师（外键）
+student  授课对象（年级）
+time   上课时间
+place  上课地点
+season 开课季节

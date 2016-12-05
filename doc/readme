@@ -1,0 +1,47 @@
+
+[platform information]
+
+  ---- python version : 2.7.16
+
+  ---- django version : 1.9.7
+
+  ---- xadmin
+
+  ---- crispy_forms
+
+  ---- MySQLdb
+
+
+
+[directory structure]
+
+  ---- doc  : document about project
+
+  ---- eduAdmin : django project
+
+
+[database information]
+
+  ---- database : mysql
+
+  ---- name : educationDB
+
+
+superuser
+    user : admin
+    pswd : admin1688
+
+username : chenlb
+pswd     : admin1688
+
+username : chengLong
+pswd     : admin1688
+
+username : pengpeng
+pswd     : admin1688
+
+username : yu
+pswd     : admin1688
+
+username : YueJiguang
+pswd     : admin1688
