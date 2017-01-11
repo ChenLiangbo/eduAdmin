@@ -50,9 +50,8 @@ class GlobalSetting(object):
             {"title": "选课管理", "icon": "fa fa-cloud","Lesson": self.get_model_perm(Lesson, "change"), "menus":(
                 {"title": "学生信息", "url": self.get_model_url(Student, "changelist")},
                 {"title": "教师信息", "url": self.get_model_url(Teacher, "changelist")},
-                {"title": "课程信息", "url": self.get_model_url(Lesson, "changelist")},      
-                {"title": "我的选课", "url": self.get_model_url(MyLessonTable, "changelist")},
-
+                {"title": "课程信息", "url": self.get_model_url(Lesson, "changelist")},
+                {"title": "我的选课", "url": self.get_model_url(MyLessonTable, "changelist")},     
             )},
             {"title":"基础信息","icon":"fa fa-cloud","Academy": self.get_model_perm(Academy, "change"), "menus":(
               {"title": "学院信息", "url": self.get_model_url(Academy, "changelist")},

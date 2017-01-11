@@ -1,0 +1,40 @@
+王  用户登录验证
+
+request:
+  
+  url : tongjilab.cn:7788/login/
+
+  method: post
+
+  args
+      {
+       "username":"chenlb";
+       "password":"admin1688";
+      }
+
+response
+   {
+  "code" : 200; 
+  "msg":"ok";
+   }
+------------------------------------------
+
+龙 查询课程信息 课程名称
+
+request
+
+  URL:tongjilab.cn:7788/lesson/
+
+  method:get
+ 
+  {
+    "token": "";
+    "name":"嵌入式系统"
+   }
+
+response
+  
+  [
+  {"id":1,"name","嵌入式系统","lessonID":0001,"teacher":"彭彭","listener":1,"place":B203,"season":"春","time":"星期二-第3节第4节","note":" "},
+  {}
+]

@@ -16,9 +16,24 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import patterns, include, url
 import xadmin
+from app import views
+admin.autodiscover()
 
-
+'''
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include(xadmin.site.urls))
+    url(r'^', include(xadmin.site.urls)),
+    url(r'^login/',views.userLogin),
 ]
+'''
+
+urlpatterns = patterns('',
+    # Examples:
+    # url(r'^$', 'alert_server.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include(xadmin.site.urls)), 
+    url(r'^lesson/',views.getLesson), 
+    url(r'^mylogin/',views.userLogin),
+)

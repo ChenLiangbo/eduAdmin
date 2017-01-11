@@ -31,7 +31,7 @@ SECRET_KEY = '7j=b9*h@*ic^tcq^2*ufb2a%j7g)gee_@le5a4#wcfsk895r&f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = '*'
+ALLOWED_HOSTS = "*"
 
 
 # Application definition
@@ -81,13 +81,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'admin_app.wsgi.application'
 
-'''
+
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 DATABASES = {
     'default': {
         'ENGINE':   'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME':     'educationDB',                      # Or path to database file if using sqlite3.
+        'NAME':     'xadminDB',                      # Or path to database file if using sqlite3.
         'USER':     'root',                      # Not used with sqlite3.
         'PASSWORD': 'root',                  # Not used with sqlite3.
         'HOST': '123.206.216.23',
@@ -102,7 +102,7 @@ DATABASES = {
         'NAME':     'educationDB',                      # Or path to database file if using sqlite3.                     # Set to empty string for default. Not used with sqlite3.
     },
     }
-
+'''
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
